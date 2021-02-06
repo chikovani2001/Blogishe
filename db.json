@@ -1,0 +1,70 @@
+{
+  "navigation": [
+    {
+      "id": 1,
+      "name": "Home",
+      "idName": "home",
+      "guard": false,
+      "auth": "show",
+      "url": "/index.html"
+    },
+    {
+      "id": 2,
+      "name": "Add blog",
+      "idName": "add-blog",
+      "guard": true,
+      "auth": "show",
+      "url": "/add-post.html"
+    },
+    {
+      "id": 3,
+      "name": "Login",
+      "idName": "login",
+      "guard": false,
+      "auth": "hide",
+      "url": "/login.html"
+    },
+    {
+      "id": 4,
+      "name": "Registration",
+      "idName": "registration",
+      "guard": false,
+      "auth": "hide",
+      "url": "/registration.html"
+    },
+    {
+      "id": 5,
+      "name": "Logout",
+      "idName": "logout",
+      "guard": true,
+      "auth": "show",
+      "url": "/index.html"
+    }
+  ],
+  "posts": [
+    {
+      "title": "bog name",
+      "author": "chikovani",
+      "content": "skldgansangas bgjoasdgnjlasbgjladsbgjasbgjasbdgljasbkfhasop mlakgnkla smdgkle ngpq erjlg qwg skldgansangas bgjoasdgnjlasbgjladsbgjasbgjasbdgljasbkfhasop mlakgnkla smdgkle ngpq erjlg qwg skldgansangas bgjoasdgnjlasbgjladsbgjasbgjasbdgljasbkfhasop mlakgnkla smdgkle ngpq erjlg qwg skldgansangas bgjoasdgnjlasbgjladsbgjasbgjasbdgljasbkfhasop mlakgnkla smdgkle ngpq erjlg qwg skldgansangas bgjoasdgnjlasbgjladsbgjasbgjasbdgljasbkfhasop mlakgnkla smdgkle ngpq erjlg qwg skldgansangas bgjoasdgnjlasbgjladsbgjasbgjasbdgljasbkfhasop mlakgnkla smdgkle ngpq erjlg qwg skldgansangas bgjoasdgnjlasbgjladsbgjasbgjasbdgljasbkfhasop mlakgnkla smdgkle ngpq erjlg qwg ",
+      "image": "asasd",
+      "description": "afsfasfafs",
+      "createDate": "Sat Feb 06 2021",
+      "id": 1
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "users": [
+    {
+      "fullName": "kuta",
+      "username": "kuta",
+      "password": "123456",
+      "id": 1
+    }
+  ]
+}
