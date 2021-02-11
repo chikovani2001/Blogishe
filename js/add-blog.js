@@ -32,10 +32,10 @@ addBlog.addEventListener("submit", id ? editBlog : addNewBlog)
 function editBlog(e){
     e.preventDefault()
     e.stopPropagation()
-    const name = document.querySelector('#name');
-    const content = document.querySelector('#content');
-    const description = document.querySelector('#description');
-    const image = document.querySelector('#image');
+    const name = document.querySelector('#name').value;
+    const content = document.querySelector('#content').value;
+    const description = document.querySelector('#description').value;
+    const image = document.querySelector('#image').value;
 
     const post = {
         title: name,
@@ -46,20 +46,22 @@ function editBlog(e){
 
     fetch("PATCH", `/posts/${id}`, post)
     .then( res => {
+        console.log(res);
         return
     });
     return;
     
 }
 
+
 function addNewBlog(e){
     e.preventDefault()
     e.stopPropagation()
    
-    const name = document.querySelector('#name');
-    const content = document.querySelector('#content');
-    const description = document.querySelector('#description');
-    const image = document.querySelector('#image');
+    const name = document.querySelector('#name').value;
+    const content = document.querySelector('#content').value;
+    const description = document.querySelector('#description').value;
+    const image = document.querySelector('#image').value;
 
     const post = {
         title: name,
@@ -77,4 +79,6 @@ function addNewBlog(e){
     });
     return;
 }
+
+
 

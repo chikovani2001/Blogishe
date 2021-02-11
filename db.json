@@ -41,7 +41,17 @@
       }
     ]
   },
-  "posts": [],
+  "posts": [
+    {
+      "title": "ბლოგ ნეიმი",
+      "author": "chiko",
+      "content": "ას,ფნაკლფნ;კასფნპასნმფლ[ანსოფ მასნფო[ასნფანსფ;კ",
+      "image": "https://www.tosfrit.es/wp/wp-content/uploads/2016/12/slide2-background.jpg",
+      "description": "მცირე",
+      "createDate": "Thu Feb 11 2021",
+      "id": 1
+    }
+  ],
   "comments": [],
   "users": [
     {

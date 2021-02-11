@@ -12,7 +12,7 @@ export default function sendRequest(method, route, data = null) {
       if (response.ok) {
         return response.json();
       }
-  
+        
       throw new Error("No data");
     });
   }
