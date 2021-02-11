@@ -41,42 +41,8 @@
       }
     ]
   },
-  "posts": [
-    {
-      "title": "bog name",
-      "author": "chikovani",
-      "content": "skldgansangas bgjoasdgnjlasbgjladsbgjasbgjasbdgljasbkfhasop mlakgnkla smdgkle ngpq erjlg qwg skldgansangas bgjoasdgnjlasbgjladsbgjasbgjasbdgljasbkfhasop mlakgnkla smdgkle ngpq erjlg qwg skldgansangas bgjoasdgnjlasbgjladsbgjasbgjasbdgljasbkfhasop mlakgnkla smdgkle ngpq erjlg qwg skldgansangas bgjoasdgnjlasbgjladsbgjasbgjasbdgljasbkfhasop mlakgnkla smdgkle ngpq erjlg qwg skldgansangas bgjoasdgnjlasbgjladsbgjasbgjasbdgljasbkfhasop mlakgnkla smdgkle ngpq erjlg qwg skldgansangas bgjoasdgnjlasbgjladsbgjasbgjasbdgljasbkfhasop mlakgnkla smdgkle ngpq erjlg qwg skldgansangas bgjoasdgnjlasbgjladsbgjasbgjasbdgljasbkfhasop mlakgnkla smdgkle ngpq erjlg qwg ",
-      "image": "asasd",
-      "description": "afsfasfafs",
-      "createDate": "Sat Feb 06 2021",
-      "id": 1
-    },
-    {
-      "title": "asklas",
-      "author": "as;fasf",
-      "content": "afasfasfafasfasfafasfasfafasfasfafasfasfafasfasf",
-      "image": "fasf",
-      "description": "asfasfasf",
-      "createDate": "Sat Feb 06 2021",
-      "id": 2
-    },
-    {
-      "title": "asfalkfnasklfdn",
-      "author": "kjadgipnago[jnd[",
-      "content": "o[wmg[owmjgo[wejmg[owejgmo[ewgjm[oewgmweo[gm[woeg[owegweg",
-      "image": "onmwego[jwe[g",
-      "description": "[oegmoew[gmk[o`",
-      "createDate": "Wed Feb 10 2021",
-      "id": 3
-    }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
+  "posts": [],
+  "comments": [],
   "users": [
     {
       "fullName": "chiko",

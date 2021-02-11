@@ -1,5 +1,6 @@
 import fetch from "./http.js";
-import isAuthorithed from "./auth.js";
+import {isAuthorithed,authUser} from "./auth.js";
+import { postDelete } from "./post.js"
 
 const posts = document.querySelector("#posts");
 
@@ -16,13 +17,27 @@ fetch("GET", "/posts").then((items) => {
     clone.querySelector(".author").textContent = post.author;
     clone.querySelector(".create-date").textContent = post.createDate;
     posts.append(clone);
-    if (isAuthorithed()) {
+    if (isAuthorithed() && authUser() === post.author) {
       const secure = document.createElement("div");
-      secure.innerHTML = `
-      <button type="button" class="btn btn-outline-primary post-edit" data-id="${post.id}">Edit</button>
-      <button type="button" class="btn btn-outline-danger post-delete" data-id="${post.id}">Delete</button>`;
-      posts.append(secure);
+      const editButton = document.createElement("button");
+      editButton.textContent = "Edit";
+      editButton.classList.add("btn", "btn-outline-primary", "post-edit");
+      editButton.setAttribute("type", "button");
+      editButton.addEventListener("click", (e) => {
+        window.location = `/add-post.html?id=${post.id}`
+      })
+
+      const deleteButton = document.createElement("button");
+      deleteButton.textContent = "Delete";
+      deleteButton.classList.add("btn", "btn-outline-danger", "post-delete");
+      deleteButton.setAttribute("type", "button");
+      deleteButton.addEventListener("click", (e) => {
+        postDelete(post.id);
+      })
       
+      secure.append(editButton, deleteButton)
+      posts.append(secure);
+    
     }
   });
 });

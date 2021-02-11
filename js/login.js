@@ -48,6 +48,7 @@ form.addEventListener("submit", async (e) => {
   } else {
     unautorized.classList.replace("show", "hide")
     localStorage.setItem('isAuthorized', 'true');
+    localStorage.setItem('fullName', user[0].fullName);
     window.location.pathname = "/";
   }
 });

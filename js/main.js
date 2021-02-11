@@ -1,5 +1,5 @@
 import fetch from "./http.js";
-import isAuthorithed from "./auth.js";
+import {isAuthorithed} from "./auth.js";
 
 const nav = document.querySelector("#menu");
 setNavigation();
@@ -10,7 +10,6 @@ function setNavigation() {
     if(isAuthorithed()){
       menuNavigation = navigation.user;
     }
-      
     menuNavigation.forEach((element) => {
       const li = document.createElement("li");
       li.classList.add("nav-item");
@@ -27,10 +26,10 @@ function setNavigation() {
         if(e.target.id === "logout"){
           e.preventDefault();
           localStorage.removeItem("isAuthorized")
+          localStorage.removeItem("fullName")
           window.location = "/"
         }
-        
-      })
+      })  
     });
   });
 }
